@@ -31,19 +31,19 @@ const Skills = () => {
   }
 
   const skills = [
-    { name: 'PYTHON', level: 95, angle: 0, radius: 180, color: '#ff2d55' },
-    { name: 'PYTORCH', level: 92, angle: 45, radius: 200, color: '#5e5ce6' },
-    { name: 'TENSORFLOW', level: 90, angle: 90, radius: 160, color: '#30d158' },
-    { name: 'SCIKIT-LEARN', level: 92, angle: 135, radius: 220, color: '#ff9500' },
-    { name: 'LANGCHAIN', level: 88, angle: 180, radius: 190, color: '#ff2d55' },
-    { name: 'HUGGINGFACE', level: 85, angle: 225, radius: 170, color: '#5e5ce6' },
-    { name: 'OPENCV', level: 85, angle: 270, radius: 210, color: '#30d158' },
-    { name: 'PANDAS', level: 95, angle: 315, radius: 185, color: '#ff9500' },
+    { name: 'PYTHON', level: 85, angle: 0, radius: 180, color: '#ff2d55' },
+    { name: 'LANGCHAIN', level: 75, angle: 45, radius: 200, color: '#5e5ce6' },
+    { name: 'TENSORFLOW', level: 70, angle: 90, radius: 160, color: '#30d158' },
+    { name: 'JAVA', level: 80, angle: 135, radius: 220, color: '#ff9500' },
+    { name: 'PANDAS', level: 78, angle: 180, radius: 190, color: '#ff2d55' },
+    { name: 'OPENCV', level: 68, angle: 225, radius: 170, color: '#5e5ce6' },
+    { name: 'STREAMLIT', level: 72, angle: 270, radius: 210, color: '#30d158' },
+    { name: 'GIT', level: 75, angle: 315, radius: 185, color: '#ff9500' },
   ]
 
   const additionalSkills = [
-    'NumPy', 'MLflow', 'FastAPI', 'Docker', 'AWS', 'GCP',
-    'OpenAI API', 'RAG', 'Vector DBs', 'NLP', 'Computer Vision', 'Deep Learning'
+    'NumPy', 'Pandas', 'Scikit-Learn', 'TensorFlow', 'LangChain',
+    'RAG', 'OpenCV', 'Streamlit', 'Java DSA', 'OOP', 'SQL', 'Git'
   ]
 
   return (
@@ -88,8 +88,8 @@ const Skills = () => {
             </h2>
 
             <p className="text-xl text-white/40 leading-relaxed mb-12 max-w-lg">
-              Every project demands the right tool. Years of experimentation 
-              have forged a versatile arsenal—ready for any challenge.
+              As a student, every project is a chance to learn something new. 
+              Constantly expanding my toolkit—one concept at a time.
             </p>
 
             {/* Skill tags */}
@@ -251,10 +251,10 @@ const Skills = () => {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { label: 'LANGUAGES', value: '8+' },
-              { label: 'FRAMEWORKS', value: '15+' },
-              { label: 'TOOLS', value: '30+' },
-              { label: 'CERTIFICATIONS', value: '5' },
+              { label: 'LANGUAGES', value: '4+' },
+              { label: 'FRAMEWORKS', value: '5+' },
+              { label: 'TOOLS', value: '10+' },
+              { label: 'PROJECTS', value: '4+' },
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}

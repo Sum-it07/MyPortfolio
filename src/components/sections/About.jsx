@@ -54,11 +54,11 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              I build intelligent systems at the intersection of{' '}
-              <span className="text-[#ff2d55]">machine learning</span> and{' '}
-              <span className="text-[#ff2d55]">software engineering.</span>
+              A passionate CSE student exploring the frontiers of{' '}
+              <span className="text-[#ff2d55]">Artificial Intelligence</span> and{' '}
+              <span className="text-[#ff2d55]">Machine Learning.</span>
               <br />
-              Making AI not just smart—<span className="text-[#ff2d55]">useful.</span>
+              Turning curiosity into <span className="text-[#ff2d55]">code.</span>
             </motion.h2>
 
             {/* Philosophy text */}
@@ -70,12 +70,13 @@ const About = () => {
               transition={{ duration: 1, delay: 0.5 }}
             >
               <p>
-                Fascinated by how machines learn. Obsessed with building AI that 
-                actually <span className="text-white">solves real problems</span>.
+                Currently pursuing B.Tech in Computer Science & Engineering at 
+                <span className="text-white">Sharda University</span>, Greater Noida.
               </p>
               <p>
-                From neural networks to production ML systems—I bridge the gap 
-                between research and deployment. Every model deserves to see the real world.
+                Fascinated by how machines learn and think. From building ML models 
+                to solving DSA problems in Java—I'm on a journey to become an AI engineer 
+                who creates technology that <span className="text-white">makes a difference</span>.
               </p>
             </motion.div>
           </div>
@@ -91,19 +92,18 @@ const About = () => {
               transition={{ duration: 1 }}
             >
               <div className="aspect-[3/4] bg-gradient-to-br from-[#ff2d55]/20 via-[#5e5ce6]/20 to-[#30d158]/20 rounded-sm overflow-hidden relative">
-                {/* Decorative elements inside */}
+                {/* Profile Image */}
+                <img 
+                  src="/myimage.jpeg" 
+                  alt="Sumit Shrestha" 
+                  className="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal hover:opacity-100 transition-all duration-700"
+                />
+                {/* Decorative overlay elements */}
                 <div className="absolute inset-4 border border-white/10" />
                 <div className="absolute inset-8 border border-white/5" />
-                <motion.div 
-                  className="absolute inset-0 flex items-center justify-center"
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-                >
-                  <div className="w-32 h-32 border border-white/10 rounded-full" />
-                </motion.div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <div className="text-xs tracking-[0.2em] text-white/30">SAN FRANCISCO, CA</div>
-                  <div className="text-xs tracking-[0.2em] text-white/30">37.7749° N, 122.4194° W</div>
+                  <div className="text-xs tracking-[0.2em] text-white/50 drop-shadow-lg">GREATER NOIDA, INDIA</div>
+                  <div className="text-xs tracking-[0.2em] text-white/50 drop-shadow-lg">SHARDA UNIVERSITY</div>
                 </div>
               </div>
 
@@ -112,8 +112,8 @@ const About = () => {
                 className="absolute -right-4 -bottom-4 bg-[#ff2d55] text-white px-6 py-4"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="text-3xl font-black">5+</div>
-                <div className="text-xs tracking-wider">YEARS</div>
+                <div className="text-3xl font-black">AI</div>
+                <div className="text-xs tracking-wider">EXPLORER</div>
               </motion.div>
             </motion.div>
 
@@ -127,10 +127,10 @@ const About = () => {
               <div className="text-xs tracking-[0.3em] text-white/30 uppercase mb-6">Core Expertise</div>
               <div className="space-y-3">
                 {[
-                  { skill: 'ARTIFICIAL INTELLIGENCE', level: 95 },
-                  { skill: 'FULL-STACK DEVELOPMENT', level: 92 },
-                  { skill: 'SYSTEM ARCHITECTURE', level: 88 },
-                  { skill: 'CREATIVE DIRECTION', level: 85 },
+                  { skill: 'PYTHON & AI/ML', level: 85 },
+                  { skill: 'JAVA & DSA', level: 80 },
+                  { skill: 'MACHINE LEARNING', level: 75 },
+                  { skill: 'WEB DEVELOPMENT', level: 70 },
                 ].map((item, i) => (
                   <motion.div 
                     key={i}

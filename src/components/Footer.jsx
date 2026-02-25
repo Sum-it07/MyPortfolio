@@ -7,10 +7,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { name: 'GH', fullName: 'GitHub', href: 'https://github.com' },
-    { name: 'LI', fullName: 'LinkedIn', href: 'https://linkedin.com' },
-    { name: 'KG', fullName: 'Kaggle', href: 'https://kaggle.com' },
-    { name: 'HF', fullName: 'Hugging Face', href: 'https://huggingface.co' },
+    { name: 'GH', fullName: 'GitHub', href: 'https://github.com/Sum-it07' },
+    { name: 'LI', fullName: 'LinkedIn', href: 'https://www.linkedin.com/in/sumit-shrestha-700b652a3/' },
   ]
 
   return (
@@ -64,11 +62,11 @@ const Footer = () => {
             </div>
 
             <motion.a
-              href="mailto:sumit@shrestha.dev"
+              href="mailto:sumitstha2060@gmail.com"
               className="mt-8 text-xl text-white/50 hover:text-white transition-colors"
               whileHover={{ x: 10 }}
             >
-              sumit@shrestha.dev
+              sumitstha2060@gmail.com
             </motion.a>
           </div>
         </div>

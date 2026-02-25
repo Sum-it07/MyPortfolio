@@ -71,7 +71,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-            <span className="text-xs tracking-[0.3em] text-white/40 uppercase">AI Engineer</span>
+            <span className="text-xs tracking-[0.3em] text-white/40 uppercase">CSE Student &bull; AI/ML Enthusiast</span>
             <div className="h-px w-20 bg-white/20" />
           </motion.div>
 
@@ -116,7 +116,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.2 }}
           >
             <span className="text-2xl md:text-4xl font-light text-white/60">—</span>
-            {['ML', 'ENGINEER', '×', 'AI', 'BUILDER'].map((word, i) => (
+            {['AI/ML', 'LEARNER', '×', 'FUTURE', 'ENGINEER'].map((word, i) => (
               <motion.span
                 key={i}
                 className={`text-lg md:text-2xl tracking-widest ${
@@ -141,19 +141,20 @@ const Hero = () => {
           >
             <div className="md:w-1/2">
               <p className="text-xl md:text-2xl font-light leading-relaxed text-white/50">
-                I don't just write code.
+                A curious mind with a passion for
                 <br />
-                <span className="text-white">I architect experiences</span> that blur the line between 
-                <span className="text-[#5e5ce6]"> human intuition</span> and 
-                <span className="text-[#30d158]"> machine intelligence</span>.
+                <span className="text-white">Artificial Intelligence</span> & 
+                <span className="text-[#5e5ce6]">Machine Learning</span>.
+                <br />
+                <span className="text-[#30d158]">Building the future, one model at a time.</span>
               </p>
             </div>
 
             {/* Stats */}
             <div className="flex gap-12 md:gap-16">
               {[
-                { num: '50+', label: 'PROJECTS' },
-                { num: '5Y', label: 'EXPERIENCE' },
+                { num: '4+', label: 'PROJECTS' },
+                { num: 'B.Tech', label: 'CSE' },
                 { num: '∞', label: 'CURIOSITY' },
               ].map((stat, i) => (
                 <motion.div 
@@ -196,14 +197,19 @@ const Hero = () => {
 
             {/* Social */}
             <div className="flex flex-col gap-4">
-              {['GH', 'LI', 'TW'].map((s, i) => (
+              {[
+                { label: 'GH', url: 'https://github.com/Sum-it07' },
+                { label: 'LI', url: 'https://www.linkedin.com/in/sumit-shrestha-700b652a3/' },
+              ].map((s, i) => (
                 <motion.a
-                  key={s}
-                  href="#"
+                  key={s.label}
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 border border-white/10 flex items-center justify-center text-xs text-white/40 hover:text-white hover:border-white/40 transition-all duration-300"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
-                  {s}
+                  {s.label}
                 </motion.a>
               ))}
             </div>

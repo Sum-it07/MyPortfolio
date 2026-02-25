@@ -28,10 +28,8 @@ const Contact = () => {
   }
 
   const socials = [
-    { name: 'GITHUB', url: 'https://github.com' },
-    { name: 'LINKEDIN', url: 'https://linkedin.com' },
-    { name: 'KAGGLE', url: 'https://kaggle.com' },
-    { name: 'HUGGINGFACE', url: 'https://huggingface.co' },
+    { name: 'GITHUB', url: 'https://github.com/Sum-it07' },
+    { name: 'LINKEDIN', url: 'https://www.linkedin.com/in/sumit-shrestha-700b652a3/' },
   ]
 
   return (
@@ -89,18 +87,18 @@ const Contact = () => {
               <div>
                 <div className="text-xs tracking-[0.2em] text-white/30 mb-2">EMAIL</div>
                 <motion.a 
-                  href="mailto:hello@alexchen.dev"
+                  href="mailto:sumitstha2060@gmail.com"
                   className="text-2xl md:text-3xl font-light text-white hover:text-[#ff9500] transition-colors"
                   whileHover={{ x: 10 }}
                 >
-                  hello@alexchen.dev
+                  sumitstha2060@gmail.com
                 </motion.a>
               </div>
 
               <div>
                 <div className="text-xs tracking-[0.2em] text-white/30 mb-2">LOCATION</div>
                 <p className="text-2xl md:text-3xl font-light text-white/50">
-                  San Francisco, CA
+                  Greater Noida, India
                 </p>
               </div>
 
